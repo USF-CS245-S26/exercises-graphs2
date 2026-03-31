@@ -94,17 +94,16 @@ public class Graph {
     /**
      * Iterative DFS implementation that uses a stack.
      * @param vertex source vertex
-     * @param addedToStack array that stores true for each vertex id that has been already added to the stack, and false otherwise
+     * @param visited array that stores true for each vertex id that has been visited
      */
-    public void dfsWithStack(int vertex, boolean[] addedToStack) {
+    public void dfsWithStack(int vertex, boolean[] visited) {
         Stack<Integer> stack = new Stack<>();
         stack.push(vertex); // push the source vertex onto the stack
-        addedToStack[vertex] = true;
 
         while (!stack.isEmpty()) {
-            // pop the vertex from the stack, mark it as "addedToStack"
+            // pop the vertex from the stack, mark it as "visited"
             // iterate over the row for the vertex you popped
-            // if found a neighbor that has not been added to the stack, push it onto the stack
+            // if found a neighbor that has not been visited, push it onto the stack
             // FILL IN CODE:
 
         }
